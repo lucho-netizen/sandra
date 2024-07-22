@@ -1,0 +1,78 @@
+<app-nav></app-nav>
+<app-chat></app-chat>
+
+<form [formGroup]="chatForm" (ngSubmit)="submitForm()">
+  
+  <div *ngIf="prediction" class="prediction-container">
+    <h3 *ngIf="prediction !== null">Predicción:</h3>
+    <p>{{ prediction }}</p>
+  </div>
+
+  <h2>Formulario de Síntomas del Cáncer de Mama</h2>
+
+  <label for="edad">1. Edad</label>
+  <select id="edad" formControlName="edad">
+    <option value="30-39">30-39</option>
+    <option value="40-49">40-49</option>
+    <option value="50-59">50-59</option>
+    <option value="60-69">60-69</option>
+    <option value="70-79">70-79</option>
+  </select>
+
+  <label>2. ¿Cuál es su estado de menopausia?</label>
+  <select formControlName="menopausia">
+    <option value="premeno">No me ha dado la menopausia</option>
+    <option value="ge40">
+      Tengo más de 40 año y ya me dio o me sigue dando la menopausia
+    </option>
+  </select>
+
+  <label>3. ¿Tiene ganglios linfáticos afectados?</label>
+  <select formControlName="nodo_capa">
+    <option value="no">No</option>
+    <option value="yes">Sí</option>
+  </select>
+
+  <label>4. ¿En qué seno tiene dolor?</label>
+  <select formControlName="seno">
+    <option value="left">Izquierdo</option>
+    <option value="right">Derecho</option>
+  </select>
+
+  <label>5. ¿Dónde está la ubicación del dolor?</label>
+  <select formControlName="lado">
+    <option value="left">Arriba a la izquierda</option>
+    <option value="left">Abajo a la izquierda</option>
+    <option value="right">Arriba a la derecha</option>
+    <option value="right">Abajo a la derecha</option>
+  </select>
+
+  <label>6. ¿Ha recibido radioterapia?</label>
+  <select formControlName="irradiar">
+    <option value="no">No</option>
+    <option value="yes">Sí</option>
+  </select>
+
+  <label>7. ¿Sientes más peso de lo normal?</label>
+  <select formControlName="tumor_tamaño" required>
+    <option value="0-4">No</option>
+    <option value="5-9">Sí</option>
+  </select>
+
+  <label>4. ¿Cuál es el grado de malignidad del tumor (si se conoce)?</label>
+  <p>
+    El grado de malignidad indica cuán agresivo es el tumor. Si no sabe el
+    grado, seleccione "No sabe".
+  </p>
+  <select formControlName="grado_maligno" required>
+    <option value="0">No sabe</option>
+    <option value="1">1 (Bajo) - Tumor menos agresivo</option>
+    <option value="2">2 (Moderado) - Tumor de agresividad intermedia</option>
+    <option value="3">3 (Alto) - Tumor más agresivo</option>
+  </select>
+
+  <br />
+  <br />
+
+  <input type="submit" value="Enviar" />
+</form>
