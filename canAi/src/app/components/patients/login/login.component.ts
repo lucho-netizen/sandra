@@ -6,7 +6,7 @@ import { UserService } from '../../../services/user.service';
 import { Title } from '@angular/platform-browser';
 
 // Google Oauth
-import { SocialAuthService, GoogleLoginProvider, SocialUser } from 'angularx-social-login';
+import { SocialAuthService, GoogleLoginProvider, SocialUser } from '@abacritt/angularx-social-login';
 
 declare const google: any;
 

@@ -27,8 +27,8 @@ import { PatientService } from './services/patient/patient.service';
 
 
 //Google Oauth
-import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
-import { GoogleLoginProvider } from 'angularx-social-login';
+import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { ChatComponent } from './components/patients/chat/chat.component';
 import { AdminReportComponent } from './components/admin/dashboard/reports/reports.component';
 import { AdminTreatmentsComponent } from './components/admin/dashboard/treatments/treatments.component';

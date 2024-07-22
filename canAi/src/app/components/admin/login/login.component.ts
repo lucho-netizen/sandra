@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 import { AdminAuthService } from '../../../services/admin-auth.service';
 
 // Google Oauth
-import { SocialAuthService, GoogleLoginProvider, SocialUser } from 'angularx-social-login';
-
+import { SocialAuthService, GoogleLoginProvider, SocialUser } from '@abacritt/angularx-social-login';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
