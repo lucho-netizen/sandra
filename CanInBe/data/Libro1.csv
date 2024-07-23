@@ -1,11 +1,4 @@
-clase,edad,menopausia,tumor_tamaño,nodo_capa,grado_maligno,seno,lado,irradiar
-no-recurrence-events,30-39,premeno,0-4,no,2,left,left,no
-recurrence-events,40-49,ge40,5-9,yes,3,right,right,yes
-no-recurrence-events,50-59,premeno,10-14,no,2,left,left,no
-recurrence-events,60-69,ge40,15-19,yes,1,left,right,yes
-no-recurrence-events,70-79,premeno,20-24,no,2,left,left,no
-no-recurrence-events,30-39,premeno,0-4,no,3,right,central,no
-recurrence-events,40-49,ge40,5-9,yes,2,left,left,yes
+clase,edad,menopausia,tumor_tama�o,nodo_capa,grado_maligno,seno,lado,irradiar
 no-recurrence-events,30-39,premeno,30-34,no,3,left,left_low,no
 no-recurrence-events,40-49,premeno,20-24,no,2,right,right_up,no
 no-recurrence-events,40-49,premeno,20-24,no,2,left,left_low,no

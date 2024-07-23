@@ -2,7 +2,6 @@
 <app-chat></app-chat>
 
 <form [formGroup]="chatForm" (ngSubmit)="submitForm()">
-  
   <div *ngIf="prediction" class="prediction-container">
     <h3 *ngIf="prediction !== null">Predicción:</h3>
     <p>{{ prediction }}</p>
@@ -41,10 +40,10 @@
 
   <label>5. ¿Dónde está la ubicación del dolor?</label>
   <select formControlName="lado">
-    <option value="left">Arriba a la izquierda</option>
-    <option value="left">Abajo a la izquierda</option>
-    <option value="right">Arriba a la derecha</option>
-    <option value="right">Abajo a la derecha</option>
+    <option value="left_low">Abajo Izquierda</option>
+    <option value="left_up">Arriba Izquierda</option>
+    <option value="right_low">Abajo Derecho</option>
+    <option value="right_up">Arriba Derecho</option>
   </select>
 
   <label>6. ¿Ha recibido radioterapia?</label>
