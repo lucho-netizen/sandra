@@ -22,7 +22,7 @@ interface chatService {
 
 export class ChatService {
 
-  private apiUrl = 'http://localhost:8000/predict/';  // URL del backend
+  private apiUrl = 'http://127.0.0.1:5000/predict/';  // URL del backend
 
   constructor(private http: HttpClient) { }
 

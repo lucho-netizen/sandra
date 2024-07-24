@@ -37,7 +37,7 @@ export class ChatComponent implements OnInit {
     this.messages.push({ sender: 'user', text: messageText });
     this.userInput = '';
 
-    fetch('http://localhost:8000/chat', {
+    fetch('http://localhost:8001/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ sender: 'user', message: messageText }),
