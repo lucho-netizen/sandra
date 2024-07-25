@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+#Run Rasa
+Run Rasa with `npm run start` in port `http://127.0.0.1:8000`
+
+#SandraIA
+If you want run the ia application cancer us `uvicorn app:app --host: 127.0.0.1 --port:5000`
+
+With this you can run all 
