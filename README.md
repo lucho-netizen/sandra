@@ -33,3 +33,8 @@ Run Rasa with `npm run start` in port `http://127.0.0.1:8000`
 If you want run the ia application cancer us `uvicorn app:app --host: 127.0.0.1 --port:5000`
 
 With this you can run all 
+
+![login](https://github.com/user-attachments/assets/beb78a28-9704-43ea-817e-cdd0e8d0de09)
+![register](https://github.com/user-attachments/assets/6741737a-f549-42c7-afbb-4b3039bb0164)
+![chatbot](https://github.com/user-attachments/assets/8e0c6f08-8614-4225-aabb-25abf3b31334)
+![cancer_detected](https://github.com/user-attachments/assets/9fad2612-9e86-486b-9483-12029fee52a0)
